@@ -1,6 +1,6 @@
 --1. INSERT
 --1. Без указания списка полей
-NSERT INTO actor VALUES ('Иван', 'Иванов', '2012-06-18', 1);
+INSERT INTO actor VALUES ('Иван', 'Иванов', '2012-06-18', 1);
 --2. С указанием списка полей
 INSERT INTO actor (firstname, lastname, birthday, gender) VALUES ('Петр', 'Петров', '1990-02-11', 1);
 --3. С чтением значения из другой таблицы
