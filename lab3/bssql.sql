@@ -71,7 +71,7 @@ SELECT date, MIN(price) FROM spectacle GROUP BY date HAVING SUM(price) > 10
 --1. LEFT JOIN двух таблиц и WHERE по одному из атрибутов
 SELECT firstname, title FROM author LEFT JOIN play ON author.author_id = play.author_id WHERE firstname = 'Алиса'
 --2. RIGHT JOIN. Получить такую же выборку, как и в 9.1
-SELECT firstname, title FROM play RIGHT JOIN author ON author.author_id = play.author_id WHERE title = 'Евгений Онегин'
+SELECT firstname, title FROM play RIGHT JOIN author ON author.author_id = play.author_id WHERE firstname = 'Алиса'
 --3. LEFT JOIN трех таблиц + WHERE по атрибуту из каждой таблицы
 SELECT play.title, theater.title FROM spectacle
 LEFT JOIN play ON play.play_id = spectacle.play_id
