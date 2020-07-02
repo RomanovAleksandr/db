@@ -76,6 +76,7 @@ SELECT firstname, title FROM play RIGHT JOIN author ON author.author_id = play.a
 SELECT play.title, theater.title FROM spectacle
 LEFT JOIN play ON play.play_id = spectacle.play_id
 LEFT JOIN theater ON theater.theater_id = spectacle.theater_id
+WHERE title = 'Edutybq jytuby' AND date = '01-01-18' AND address = 'ул Пушкина'
 --4. FULL OUTER JOIN двух таблиц
 SELECT firstname, title FROM author FULL OUTER JOIN play ON play.author_id = author.author_id
 
